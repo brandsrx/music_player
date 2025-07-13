@@ -1,0 +1,438 @@
+.main_container{
+    background-color: #121212;
+    color: #ffffff;
+}
+.sidebar-container{
+    background-color: #121212;
+    border-right: 1px solid #646060; /* borde ejemplo */
+    color: #ffffff;
+}
+
+
+
+/* ===== MUSIC PLAYER CONTROL BAR STYLES - GTK3 COMPATIBLE ===== */
+.controls-container{
+    background-color: rgba(0, 0, 0, 0.5);
+    border: white 1px;
+    padding: 3px;
+}
+
+/* Estilo para botones planos (solo icono) */
+.flat-button,.heart-button {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    padding: 4px;
+    margin: 0;
+    -gtk-icon-shadow: none;
+}
+
+.flat-button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.flat-button:active {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+/* Opcional: Cambiar color de icono en hover */
+.flat-button:hover image {
+    color: #1DB954; /* Verde de Spotify/Amazon Music */
+}
+/* ---------------------------------------------------------------------------- */
+/* === PLAYLIST GTK3 DARK STYLE SEGURO === */
+
+/* Contenedor principal */
+.playlist-item-container {
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* EventBox - interacción */
+.playlist-item-eventbox {
+    background-color: transparent;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    margin: 1px 4px;
+}
+
+.playlist-item-eventbox:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Fila principal */
+.playlist-item-row {
+    background-color: transparent;
+    border-radius: 8px;
+    min-height: 72px;
+    border: none;
+}
+
+.playlist-item-hovered {
+    background-color: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.15);
+}
+
+.playlist-item-current {
+    background-color: rgba(29, 185, 84, 0.12);
+    border-color: rgba(29, 185, 84, 0.25);
+}
+
+.playlist-item-playing {
+    background-color: rgba(29, 185, 84, 0.18);
+    border-color: rgba(29, 185, 84, 0.35);
+}
+
+/* Controles */
+.track-control-section {
+    background-color: transparent;
+    border: none;
+    border-radius: 6px;
+}
+
+/* Número de pista */
+.track-number {
+    color: #b3b3b3;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: sans-serif;
+}
+
+.track-number-current {
+    color: #1db954;
+    font-weight: 600;
+}
+
+/* Cover */
+.album-cover-container {
+    background-color: rgba(255, 255, 255, 0.03);
+    border-radius: 6px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.album-cover-image {
+    border-radius: 4px;
+}
+
+.song-info-section {
+    background-color: transparent;
+    border: none;
+}
+
+/* Título canción */
+.song-title {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: sans-serif;
+}
+
+.song-title-current {
+    color: #1db954;
+    font-weight: 600;
+}
+
+/* Artista */
+.song-artist {
+    color: #b3b3b3;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: sans-serif;
+}
+
+.song-artist-current {
+    color: rgba(29, 185, 84, 0.85);
+}
+
+/* Duración */
+.song-duration {
+    color: #b3b3b3;
+    font-size: 13px;
+    font-weight: 400;
+    font-family: monospace;
+}
+
+.playlist-item-current .song-duration {
+    color: #1db954;
+    font-weight: 500;
+}
+
+/* Separador */
+.playlist-separator {
+    background-color: rgba(255, 255, 255, 0.06);
+    min-height: 1px;
+    border: none;
+}
+
+
+/* Estados */
+.playlist-item-eventbox:selected {
+    background-color: rgba(29, 185, 84, 0.15);
+}
+
+.playlist-item-eventbox:active {
+    background-color: rgba(29, 185, 84, 0.08);
+}
+
+.playlist-item-eventbox:focus {
+    border: 1px solid #1db954;
+}
+
+.playlist-item-eventbox:disabled {
+    opacity: 0.5;
+}
+
+.playlist-item-eventbox:disabled .song-title {
+    color: #666666;
+}
+
+.playlist-item-eventbox:disabled .song-artist {
+    color: #555555;
+}
+
+/* Tema compacto */
+.playlist-item-container.compact .playlist-item-row {
+    min-height: 56px;
+}
+
+.playlist-item-container.compact .song-title {
+    font-size: 14px;
+}
+
+.playlist-item-container.compact .song-artist {
+    font-size: 12px;
+}
+
+/* Tema azul */
+.playlist-item-container.blue-accent .playlist-item-current {
+    background-color: rgba(33, 150, 243, 0.12);
+    border-color: rgba(33, 150, 243, 0.25);
+}
+
+.playlist-item-container.blue-accent .song-title-current,
+.playlist-item-container.blue-accent .track-number-current {
+    color: #2196f3;
+}
+
+.playlist-item-container.blue-accent .playlist-item-playing {
+    background-color: rgba(33, 150, 243, 0.18);
+    border-color: rgba(33, 150, 243, 0.35);
+}
+
+/* Utilidades */
+.hidden {
+    opacity: 0;
+}
+
+.visible {
+    opacity: 1;
+}
+
+.loading {
+    opacity: 0.6;
+}
+
+.highlight {
+    background-color: rgba(255, 193, 7, 0.1);
+    border: 1px solid rgba(255, 193, 7, 0.3);
+}
+
+.error {
+    background-color: rgba(244, 67, 54, 0.1);
+    border: 1px solid rgba(244, 67, 54, 0.3);
+}
+
+.error .song-title {
+    color: #f44336;
+}
+
+/* Scrollbar compatible GTK3 */
+scrollbar {
+    background-color: transparent;
+    border: none;
+}
+
+scrollbar slider {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 3px;
+    min-width: 6px;
+    min-height: 6px;
+}
+
+scrollbar slider:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+scrollbar slider:active {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+
+ /* Estilo principal - Tema oscuro Spotify */
+        .spotify-main {
+            background-color: #121212;
+            color: #ffffff;
+        }
+        
+        /* Header estilo Spotify */
+        .spotify-header {
+            background-color: #121212;
+            border-bottom: 1px solid #282828;
+        }
+        
+        .spotify-logo {
+            color: #1db954;
+            margin-right: 4px;
+        }
+        
+        .spotify-title {
+            font-size: 24px;
+            font-weight: 700;
+            color: #ffffff;
+        }
+        
+        /* Barra de búsqueda */
+        .search-container {
+            background-color: #121212;
+        }
+        
+        .spotify-search {
+            background-color: #242424;
+            border: none;
+            border-radius: 20px;
+            color: #ffffff;
+            font-size: 14px;
+            padding: 8px 16px;
+        }
+        
+        .spotify-search:focus {
+            background-color: #2a2a2a;
+            box-shadow: 0 0 0 2px #1db954;
+        }
+        
+        /* Separador */
+        .spotify-separator {
+            background-color: #282828;
+            min-height: 1px;
+        }
+        
+        /* Área de scroll */
+        .spotify-scroll {
+            background-color: #121212;
+            border: none;
+        }
+        
+        .spotify-scroll scrollbar.vertical {
+            background-color: transparent;
+            border: none;
+        }
+        
+        .spotify-scroll scrollbar.vertical slider {
+            background-color: #535353;
+            border-radius: 4px;
+            min-width: 8px;
+            margin: 2px;
+        }
+        
+        .spotify-scroll scrollbar.vertical slider:hover {
+            background-color: #b3b3b3;
+        }
+        
+        /* Secciones de contenido */
+        .content-section {
+            background-color: #121212;
+        }
+        
+        .section-title {
+            font-size: 16px;
+            font-weight: 700;
+            color: #ffffff;
+        }
+        
+        /* Lista de artistas */
+        .spotify-list {
+            background-color: transparent;
+        }
+        
+        .spotify-row {
+            background-color: transparent;
+            border-radius: 4px;
+            margin: 0px 8px 0px 8px;
+            min-height: 64px;
+            transition: all 0.1s ease;
+        }
+        
+        .spotify-row:hover {
+            background-color: #1a1a1a;
+        }
+        
+        .spotify-row:selected {
+            background-color: #282828;
+        }
+        
+        /* Avatar del artista */
+        .artist-avatar {
+            background: linear-gradient(135deg, #1db954 0%, #1ed760 100%);
+            border-radius: 24px;
+            min-width: 48px;
+            min-height: 48px;
+        }
+        
+        .avatar-text {
+            font-size: 16px;
+            font-weight: 600;
+            color: #000000;
+        }
+        
+        /* Información del artista */
+        .spotify-artist-name {
+            font-size: 16px;
+            font-weight: 400;
+            color: #ffffff;
+        }
+        
+        .spotify-artist-info {
+            font-size: 14px;
+            color: #b3b3b3;
+        }
+        
+        /* Iconos */
+        .favorite-indicator {
+            color: #1db954;
+            margin-right: 8px;
+        }
+        
+        .options-button {
+            color: #b3b3b3;
+            opacity: 0;
+            transition: opacity 0.1s ease;
+        }
+        
+        .spotify-row:hover .options-button {
+            opacity: 1;
+        }
+        
+        .options-button:hover {
+            color: #ffffff;
+        }
+        
+        /* Estados de hover para mejor UX */
+        .spotify-row:hover .spotify-artist-name {
+            color: #ffffff;
+        }
+        
+        .spotify-row:hover .spotify-artist-info {
+            color: #ffffff;
+        }
+
+.action-button2{
+    color: white;
+    background-color: #121212;
+}
+.nav-button,.action-button{
+    color: white;
+}
+

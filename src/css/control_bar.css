@@ -1,0 +1,80 @@
+.control-bar {
+    background: linear-gradient(135deg, #2c3e50, #34495e);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+.control-button {
+    background: linear-gradient(135deg, #3498db, #2980b9);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    min-width: 45px;
+    min-height: 35px;
+}
+.flat-button {
+    background: none;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+}
+.control-button:hover {
+    background: linear-gradient(135deg, #5dade2, #3498db);
+    box-shadow: 0 4px 12px rgba(52, 152, 219, 0.4);
+}
+.play-button {
+    background: linear-gradient(135deg, #e74c3c, #c0392b);
+    min-width: 50px;
+    min-height: 40px;
+}
+.play-button:hover {
+    background: linear-gradient(135deg, #ec7063, #e74c3c);
+}
+.volume-button {
+    background: linear-gradient(135deg, #f39c12, #e67e22);
+    min-width: 40px;
+}
+.volume-button:hover {
+    background: linear-gradient(135deg, #f7dc6f, #f39c12);
+}
+.progress-scale {
+    background: #34495e;
+    border-radius: 6px;
+}
+.progress-scale slider {
+    background: linear-gradient(135deg, #e74c3c, #c0392b);
+    border-radius: 50%;
+    min-width: 18px;
+    min-height: 18px;
+    border: 2px solid white;
+}
+.volume-scale {
+    background: #34495e;
+    border-radius: 6px;
+}
+.volume-scale slider {
+    background: linear-gradient(135deg, #f39c12, #e67e22);
+    border-radius: 50%;
+    min-width: 16px;
+    min-height: 16px;
+    border: 2px solid white;
+}
+.song-info {
+    color: #ecf0f1;
+    font-weight: bold;
+    font-size: 14px;
+}
+.song-title {
+    color: #3498db;
+    font-weight: bold;
+    font-size: 16px;
+}
+.song-artist {
+    color: #bdc3c7;
+    font-size: 12px;
+}
+.time-label {
+    color: #bdc3c7;
+    font-size: 11px;
+    font-family: monospace;
+}

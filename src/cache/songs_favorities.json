@@ -1,0 +1,22 @@
+[
+  {
+    "id": 7,
+    "title": "Kurt Cobain - And I love her (Remastered)[Lyrics/Sub.Español] ",
+    "artist": "~Arsai~",
+    "path_file": "/home/breand/Música/Kurt Cobain - And I love her (Remastered)[Lyrics_Sub.Español] 🎶🎶(MP3_160K).mp3",
+    "duration_sec": 22.75200000000001,
+    "duration_min": 2.0,
+    "duration_total_sec": 142.752,
+    "is_favorite": true
+  },
+  {
+    "id": 6,
+    "title": "Smells Like Teen Spirit - Butch Vig Mix",
+    "artist": "Nirvana",
+    "path_file": "/home/breand/Música/Nirvana - Smells Like Teen Spirit (Official Music Video)(MP3_160K).mp3",
+    "duration_sec": 38.351999999999975,
+    "duration_min": 4.0,
+    "duration_total_sec": 278.352,
+    "is_favorite": true
+  }
+]

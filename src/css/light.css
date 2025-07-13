@@ -1,0 +1,416 @@
+.main_container {
+    background-color: #f4f4f4;
+    color: #222222;
+}
+
+.sidebar-container {
+    background-color: #f0f0f0;
+    color: #222222;
+}
+.nav-button,.action-button{
+    color: #000;
+}
+.controls-container {
+    background-color: rgba(0, 0, 0, 0.05);
+    padding: 3px;
+}
+
+.flat-button, .heart-button {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    padding: 4px;
+    margin: 0;
+    -gtk-icon-shadow: none;
+}
+
+.flat-button:hover {
+    background-color: rgba(0, 0, 0, 0.06);
+}
+
+.flat-button:active {
+    background-color: rgba(0, 0, 0, 0.09);
+}
+
+.flat-button:hover image {
+    color: #1DB954;
+}
+
+.playlist-item-container {
+    background-color: transparent;
+}
+
+.playlist-item-eventbox {
+    background-color: transparent;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    margin: 1px 4px;
+}
+
+.playlist-item-eventbox:hover {
+    background-color: rgba(0, 0, 0, 0.03);
+    border-color: rgba(0, 0, 0, 0.06);
+}
+
+.playlist-item-row {
+    background-color: transparent;
+    border-radius: 8px;
+    min-height: 72px;
+}
+
+.playlist-item-hovered {
+    background-color: rgba(0, 0, 0, 0.05);
+    border-color: rgba(0, 0, 0, 0.08);
+}
+
+.playlist-item-current {
+    background-color: rgba(29, 185, 84, 0.1);
+    border-color: rgba(29, 185, 84, 0.2);
+}
+
+.playlist-item-playing {
+    background-color: rgba(29, 185, 84, 0.15);
+    border-color: rgba(29, 185, 84, 0.3);
+}
+
+.track-control-section {
+    background-color: transparent;
+    border: none;
+    border-radius: 6px;
+}
+
+.track-number {
+    color: #333333;
+}
+
+.track-number-current {
+    color: #1db954;
+    font-weight: 600;
+}
+
+.album-cover-container {
+    background-color: rgba(0, 0, 0, 0.02);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.album-cover-image {
+    border-radius: 4px;
+}
+
+.song-info-section {
+    background-color: transparent;
+}
+
+.song-title {
+    color: #222222;
+}
+
+.song-title-current {
+    color: #1db954;
+}
+
+.song-artist {
+    color: #555555;
+}
+
+.song-artist-current {
+    color: rgba(29, 185, 84, 0.85);
+}
+
+.song-duration {
+    color: #444444;
+}
+
+.playlist-item-current .song-duration {
+    color: #1db954;
+}
+
+.playlist-separator {
+    background-color: rgba(0, 0, 0, 0.04);
+}
+
+.playlist-item-eventbox:selected {
+    background-color: rgba(29, 185, 84, 0.12);
+}
+
+.playlist-item-eventbox:active {
+    background-color: rgba(29, 185, 84, 0.08);
+}
+
+.playlist-item-eventbox:focus {
+    border: 1px solid #1db954;
+}
+
+.playlist-item-eventbox:disabled {
+    opacity: 0.5;
+}
+
+.playlist-item-eventbox:disabled .song-title {
+    color: #999999;
+}
+
+.playlist-item-eventbox:disabled .song-artist {
+    color: #888888;
+}
+
+.playlist-item-container.compact .playlist-item-row {
+    min-height: 56px;
+}
+
+.playlist-item-container.compact .song-title {
+    font-size: 14px;
+}
+
+.playlist-item-container.compact .song-artist {
+    font-size: 12px;
+}
+
+.playlist-item-container.blue-accent .playlist-item-current {
+    background-color: rgba(33, 150, 243, 0.1);
+    border-color: rgba(33, 150, 243, 0.2);
+}
+
+.playlist-item-container.blue-accent .song-title-current,
+.playlist-item-container.blue-accent .track-number-current {
+    color: #2196f3;
+}
+
+.playlist-item-container.blue-accent .playlist-item-playing {
+    background-color: rgba(33, 150, 243, 0.15);
+    border-color: rgba(33, 150, 243, 0.25);
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.visible {
+    opacity: 1;
+}
+
+.loading {
+    opacity: 0.6;
+}
+
+.highlight {
+    background-color: rgba(255, 193, 7, 0.1);
+    border: 1px solid rgba(255, 193, 7, 0.3);
+}
+
+.error {
+    background-color: rgba(244, 67, 54, 0.1);
+    border: 1px solid rgba(244, 67, 54, 0.3);
+}
+
+.error .song-title {
+    color: #f44336;
+}
+
+scrollbar {
+    background-color: transparent;
+    border: none;
+}
+
+scrollbar slider {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+scrollbar slider:hover {
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+scrollbar slider:active {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.spotify-main {
+    background-color: #f4f4f4;
+    color: #222222;
+}
+
+.spotify-header {
+    background-color: #eaeaea;
+    border-bottom: 1px solid #cccccc;
+}
+
+.spotify-logo {
+    color: #1db954;
+}
+
+.spotify-title {
+    color: #222222;
+}
+
+.search-container {
+    background-color: #f4f4f4;
+}
+
+.spotify-search {
+    background-color: #e8e8e8;
+    color: #222222;
+}
+
+.spotify-search:focus {
+    background-color: #dddddd;
+    box-shadow: 0 0 0 2px #1db954;
+}
+
+.spotify-separator {
+    background-color: #d0d0d0;
+}
+
+.spotify-scroll {
+    background-color: #f4f4f4;
+}
+
+.spotify-scroll scrollbar.vertical slider {
+    background-color: #bbbbbb;
+}
+
+.spotify-scroll scrollbar.vertical slider:hover {
+    background-color: #999999;
+}
+
+.content-section {
+    background-color: #f4f4f4;
+}
+
+.section-title {
+    color: #222222;
+}
+
+.spotify-row {
+    background-color: transparent;
+}
+
+.spotify-row:hover {
+    background-color: #ebebeb;
+}
+
+.spotify-row:selected {
+    background-color: #dcdcdc;
+}
+
+.artist-avatar {
+    background: linear-gradient(135deg, #1db954 0%, #1ed760 100%);
+}
+
+.avatar-text {
+    color: #000000;
+}
+
+.spotify-artist-name {
+    color: #222222;
+}
+
+.spotify-artist-info {
+    color: #666666;
+}
+
+.favorite-indicator {
+    color: #1db954;
+}
+
+.options-button {
+    color: #666666;
+}
+
+.options-button:hover {
+    color: #222222;
+}
+
+.spotify-row:hover .spotify-artist-name,
+.spotify-row:hover .spotify-artist-info {
+    color: #222222;
+}
+
+.sidebar-container {
+    background-color: #f9f9f9; /* fondo claro */
+    border-right: 1px solid #cccccc; /* borde gris claro */
+    min-width: 220px;
+}
+
+.section-title {
+    font-size: 0.85em;
+    font-weight: bold;
+    color: #333333; /* texto oscuro */
+    opacity: 0.8;
+    margin-bottom: 8px;
+    margin-top: 4px;
+}
+
+.sidebar-button {
+    border: none;
+    background-color: transparent;
+    border-radius: 6px;
+    margin: 1px 0;
+}
+
+.sidebar-button:hover {
+    background-color: rgba(0, 0, 0, 0.04); /* gris leve */
+}
+
+.sidebar-button:active,
+.sidebar-button.active {
+    background-color: #cce4f7; /* azul suave */
+}
+
+.sidebar-button.active .button-text {
+    color: #1a1a1a;
+    font-weight: 500;
+}
+
+.sidebar-button.active .icon-fallback {
+    color: #1a1a1a;
+}
+
+.nav-button:hover {
+    background-color: rgba(52, 101, 164, 0.1);
+}
+
+.action-button {
+    margin-top: 4px;
+}
+
+.action-button:hover {
+    background-color: rgba(0, 0, 0, 0.05); /* gris suave */
+}
+
+.exit-button:hover {
+    background-color: rgba(204, 0, 0, 0.1); /* rojo suave */
+}
+
+.exit-button:hover .button-text {
+    color: #cc0000;
+}
+
+.exit-button:hover .icon-fallback {
+    color: #cc0000;
+}
+
+.button-text {
+    font-size: 0.9em;
+    color: #333333;
+    font-weight: 400;
+}
+
+.icon-fallback {
+    font-size: 1em;
+    color: #444444;
+    opacity: 0.8;
+    font-weight: normal;
+}
+
+.section-separator {
+    background-color: #cccccc;
+    opacity: 0.6;
+    min-height: 1px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.sidebar-button:focus {
+    outline: 2px solid #3465a4;
+    outline-offset: -2px;
+}
+

@@ -1,0 +1,114 @@
+.playlist-item-container{
+                background-color: #121212;
+            color: #ffffff;
+}
+
+.playlist-item {
+    background-color: transparent;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    margin: 0 8px;
+}
+
+.playlist-item:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+    /* backdrop-filter no soportado en GTK3, se elimina */
+}
+
+.playlist-item-playing {
+    background-color: rgba(29, 185, 84, 0.1);
+    border-left: 3px solid #1db954;
+    padding-left: 13px;
+}
+
+.playlist-item-playing:hover {
+    background-color: rgba(29, 185, 84, 0.15);
+}
+
+.track-number {
+    color: #b3b3b3;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'SF Pro Display', -apple-system, sans-serif;
+    min-width: 40px;
+}
+
+.track-number-playing {
+    color: #1db954;
+    font-weight: 600;
+}
+
+.song-title-minimal {
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 16px;
+    font-family: 'SF Pro Display', -apple-system, sans-serif;
+}
+
+.song-title-playing {
+    color: #1db954;
+    font-weight: 600;
+}
+
+.song-artist-minimal {
+    color: #b3b3b3;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'SF Pro Display', -apple-system, sans-serif;
+    margin-top: 2px;
+}
+
+.song-duration-minimal {
+    color: #b3b3b3;
+    font-size: 14px;
+    font-family: 'SF Mono', 'Monaco', monospace;
+    font-weight: 400;
+    min-width: 50px;
+}
+
+.play-button-minimal {
+    background-color: rgba(29, 185, 84, 0.9);
+    color: #000000;
+    border-radius: 50%;
+    border: none;
+    font-size: 12px;
+    min-width: 32px;
+    min-height: 32px;
+    opacity: 0;
+    /* transition y transform no soportados en GTK3, se eliminan */
+}
+
+.play-button-minimal:hover {
+    background-color: #1db954;
+    /* transform no soportado, se elimina */
+}
+
+.play-button-visible {
+    opacity: 1;
+    /* transform no soportado, se elimina */
+}
+
+.album-cover-minimal {
+    border-radius: 4px;
+    min-width: 48px;
+    min-height: 48px;
+    background-color: #2a2a2a; /* Se cambia linear-gradient por color sólido */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.equalizer-minimal {
+    min-width: 20px;
+    min-height: 16px;
+}
+
+.separator-minimal {
+    background-color: rgba(255, 255, 255, 0.08);
+    min-height: 1px;
+    margin: 0 24px;
+}
+
+.info-section {
+    margin-left: 12px;
+    margin-right: 12px;
+}

@@ -1,0 +1,25 @@
+/* Estilo para la barra lateral */
+box {
+    background-color: #2d2d2d;
+    color: #ffffff;
+    border-right: 1px solid #1a1a1a;
+}
+
+/* Estilo para las filas */
+listbox row {
+    transition: background-color 0.2s ease;
+}
+
+listbox row:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+listbox row:selected {
+    background-color: #1a73e8;
+}
+
+/* Estilo para las etiquetas */
+label {
+    color: inherit;
+    font-weight: bold;
+}
